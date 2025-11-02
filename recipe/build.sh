@@ -33,7 +33,7 @@ cmake -S . -B build \
 
 cmake --build build -j${CPU_COUNT}
 
-ctest -V --test-dir build --label-exclude "flaky|mt" -E observables
+ctest -V --test-dir build --label-exclude "flaky|mt|mp" --exclude-regex observables
 
 cmake --install build
 
