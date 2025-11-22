@@ -20,6 +20,7 @@ cmake -S . -B build \
     -D CMAKE_BUILD_TYPE="${CMAKE_BUILD_TYPE}" \
     -D CMAKE_INSTALL_PREFIX="${PREFIX}" \
     -D RMG_CONDA_BUILD=ON \
+    -D RMG_USE_BXDECAY0=ON \
     -D BUILD_TESTING=ON \
     -D Python3_EXECUTABLE="$PYTHON" \
     -D FETCHCONTENT_TRY_FIND_PACKAGE_MODE="ALWAYS" \
@@ -33,7 +34,10 @@ cmake -S . -B build \
 
 cmake --build build -j${CPU_COUNT}
 
-ctest -V --test-dir build --label-exclude "flaky|mt|mp" --exclude-regex observables
+ctest -V --test-dir build \
+    --tests-regex "(bxdecay0|nist|basics)/" \
+    --label-exclude "flaky|mt|mp" \
+    --exclude-regex observables
 
 cmake --install build
 
