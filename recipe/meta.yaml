@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/legend-exp/remage/archive/v{{ version }}.tar.gz
-  sha256: 5011dfff333807d9cd86429935b04df3c1b3796bd7bfefcee60d8d73cf31236c
+  sha256: 3aff06dd5c4118a20863d44cc8b877316dfae7e20109548b68ebb5b99e3fdd1e
 
 build:
   skip: true  # [win or py<311]
