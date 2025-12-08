@@ -1,4 +1,4 @@
-{% set version = "0.17.0" %}
+{% set version = "0.18.0" %}
 
 package:
   name: remage
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/legend-exp/remage/archive/v{{ version }}.tar.gz
-  sha256: 3aff06dd5c4118a20863d44cc8b877316dfae7e20109548b68ebb5b99e3fdd1e
+  sha256: 0e0edc561dbf1138d3b9416f2dd5394f1996d1ec3c88fcea79bc1b4b78437551
 
 build:
   skip: true  # [win or py<311]
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -47,7 +47,7 @@ requirements:
     - hist
     - legend-pygeom-optics >=0.15.0
     - legend-pygeom-hpges >=0.9.0
-    - legend-pygeom-tools >=0.0.25
+    - legend-pygeom-tools >=0.0.26
     - matplotlib-base
     - numpy
     - pyg4ometry
