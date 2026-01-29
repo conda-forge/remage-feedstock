@@ -1,4 +1,4 @@
-{% set version = "0.19.5" %}
+{% set version = "0.20.0" %}
 
 package:
   name: remage
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/legend-exp/remage/archive/v{{ version }}.tar.gz
-  sha256: 900ca5dd8e72ea4fb99afcdff8ac1b2dd6ce6a76d1943b52379b987142f31bf0
+  sha256: 13a1373749a98ec7e6f8bb5fd23a883123f9d4cc13e4b865397739d11b598404
 
 build:
   skip: true  # [win or py<311]
@@ -40,6 +40,8 @@ requirements:
     - pygama >=2.2.3
     - colorlog
     - rich
+    - mplhep
+    - hist
 
     # test dependencies
     - pytest >=6
@@ -58,6 +60,8 @@ requirements:
     - pygama >=2.2.3
     - colorlog
     - rich
+    - mplhep
+    - hist
 
 test:
   commands:
