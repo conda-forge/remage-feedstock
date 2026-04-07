@@ -1,4 +1,4 @@
-{% set version = "0.21.0" %}
+{% set version = "0.22.0" %}
 
 package:
   name: remage
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/legend-exp/remage/archive/v{{ version }}.tar.gz
-  sha256: dcd53001efd9c3a78129c3800ab650570b458b81919690d76186d773369add0d
+  sha256: dc2f9e5319ea3c92e3c4512b53be959fe29645c1984c1e45e18d23dcf5deea62
 
 build:
   skip: true  # [win or py<311]
@@ -56,7 +56,7 @@ requirements:
   run:
     - python
     - legend-pydataobj >=1.16
-    - reboost >=0.10.0
+    - reboost >=0.10.0a2
     - pygama >=2.2.3
     - colorlog
     - rich
