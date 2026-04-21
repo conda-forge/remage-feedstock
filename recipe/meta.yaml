@@ -19,7 +19,7 @@ requirements:
     - cmake
     - make
   host:
-    - geant4 =11.3
+    - geant4 >=11.3,<11.4
     - bxdecay0 >=1.0.10
     - clhep
     - xerces-c
