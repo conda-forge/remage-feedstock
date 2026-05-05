@@ -10,7 +10,7 @@ source:
 
 build:
   skip: true  # [win or py<311]
-  number: 2
+  number: 3
 
 requirements:
   build:
@@ -54,6 +54,7 @@ requirements:
     - numpy
     - pyg4ometry
   run:
+    - __unix
     - python
     - legend-pydataobj >=1.16
     - reboost >=0.10.0a2
