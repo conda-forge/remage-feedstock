@@ -28,7 +28,7 @@ requirements:
     - fmt
     - cli11
     - magic_enum
-    - python >=3.11
+    - python
     - pip
     - hatchling
     - hatch-vcs
@@ -55,7 +55,7 @@ requirements:
     - pyg4ometry
   run:
     - __unix
-    - python >=3.11
+    - python
     - legend-pydataobj >=2
     - legend-lh5io >=0.2
     - reboost >=0.12.0
