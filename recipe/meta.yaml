@@ -10,7 +10,7 @@ source:
 
 build:
   skip: true  # [win or py<311]
-  number: 3
+  number: 4
 
 requirements:
   build:
@@ -28,7 +28,7 @@ requirements:
     - fmt
     - cli11
     - magic_enum
-    - python
+    - python >=3.11
     - pip
     - hatchling
     - hatch-vcs
@@ -36,7 +36,7 @@ requirements:
     - setuptools-scm
 
     - legend-pydataobj >=1.16
-    - reboost >=0.10.0
+    - reboost >=0.12.0
     - pygama >=2.2.3
     - colorlog
     - rich
@@ -55,9 +55,10 @@ requirements:
     - pyg4ometry
   run:
     - __unix
-    - python
-    - legend-pydataobj >=1.16
-    - reboost >=0.10.0a2
+    - python >=3.11
+    - legend-pydataobj >=2
+    - legend-lh5io >=0.2
+    - reboost >=0.12.0
     - pygama >=2.2.3
     - colorlog
     - rich
