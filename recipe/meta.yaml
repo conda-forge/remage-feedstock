@@ -36,7 +36,7 @@ requirements:
     - setuptools-scm
 
     - legend-pydataobj >=1.16
-    - reboost >=0.12.0
+    - reboost >=0.11.0
     - pygama >=2.2.3
     - colorlog
     - rich
