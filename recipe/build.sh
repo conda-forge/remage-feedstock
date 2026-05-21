@@ -8,7 +8,7 @@ else
   CMAKE_BUILD_TYPE=Release
 fi
 
-if [[ "${target_platform}" == "osx-64" ]]; then
+if [[ "${target_platform}" == "osx-64" || "${target_platform}" == "osx-arm64" ]]; then
   # See https://conda-forge.org/docs/maintainer/knowledge_base.html#newer-c-features-with-old-sdk
   export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
 fi
@@ -34,10 +34,12 @@ cmake -S . -B build \
 
 cmake --build build -j${CPU_COUNT}
 
-ctest -V --test-dir build \
-    --tests-regex "(bxdecay0|nist|basics)/" \
-    --label-exclude "flaky|mt|mp" \
-    --exclude-regex observables
+if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" || "${CROSSCOMPILING_EMULATOR:-}" != "" ]]; then
+    ctest -V --test-dir build \
+        --tests-regex "(bxdecay0|nist|basics)/" \
+        --label-exclude "flaky|mt|mp" \
+        --exclude-regex observables
+fi
 
 cmake --install build
 
