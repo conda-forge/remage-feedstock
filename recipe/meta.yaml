@@ -1,4 +1,4 @@
-{% set version = "0.23.2" %}
+{% set version = "0.24.0" %}
 
 package:
   name: remage
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/legend-exp/remage/archive/v{{ version }}.tar.gz
-  sha256: f859a38f4b9439f4e7027bd7ceb34216cd77be72a8a6ed0f303517ef389764a6
+  sha256: f6d3d295de00d44c2737984023675e199f66bafc67c3896f7bba27124d055075
 
 build:
   skip: true  # [win or py<311]
