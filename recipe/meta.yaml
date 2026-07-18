@@ -61,7 +61,6 @@ requirements:
     - python
     - legend-pydataobj >=2
     - legend-lh5io >=0.2
-    
     - pyg4ometry
     - pygama >=2.2.3
     - colorlog
