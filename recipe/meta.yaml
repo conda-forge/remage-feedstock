@@ -39,7 +39,7 @@ requirements:
 
     - legend-pydataobj >=2
     - legend-lh5io >=0.2
-    - reboost >=0.11.0
+    - pyg4ometry
     - pygama >=2.2.3
     - colorlog
     - rich
@@ -55,14 +55,14 @@ requirements:
     - legend-pygeom-tools >=0.0.26
     - matplotlib-base
     - numpy
-    - pyg4ometry
+    - reboost >=0.11.0
   run:
-    - pyg4ometry
     - __unix
     - python
     - legend-pydataobj >=2
     - legend-lh5io >=0.2
-    - reboost >=0.11.0
+    
+    - pyg4ometry
     - pygama >=2.2.3
     - colorlog
     - rich
