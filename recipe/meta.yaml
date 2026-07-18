@@ -1,4 +1,4 @@
-{% set version = "0.24.0" %}
+{% set version = "0.25.0" %}
 
 package:
   name: remage
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/legend-exp/remage/archive/v{{ version }}.tar.gz
-  sha256: f6d3d295de00d44c2737984023675e199f66bafc67c3896f7bba27124d055075
+  sha256: 80de57276e3700ca29baac23295df41d661da69fc305f90e234e42fb43b591d5
 
 build:
   skip: true  # [win or py<311]
@@ -57,6 +57,7 @@ requirements:
     - numpy
     - pyg4ometry
   run:
+    - pyg4ometry
     - __unix
     - python
     - legend-pydataobj >=2
