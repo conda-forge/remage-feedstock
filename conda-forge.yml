@@ -1,11 +1,11 @@
-build_platform:
-  osx_arm64: osx_64
-github:
-  branch_name: main
-  tooling_branch_name: main
+bot:
+  inspection: update-grayskull
 conda_build:
   error_overlinking: true
 conda_forge_output_validation: true
+github:
+  branch_name: main
+  tooling_branch_name: main
+provider:
+  osx_arm64: default
 test: native_and_emulated
-bot:
-  inspection: update-grayskull
