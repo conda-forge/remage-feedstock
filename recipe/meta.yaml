@@ -22,7 +22,7 @@ requirements:
     - make
   host:
     - geant4 >=11.3,<11.4
-    - bxdecay0 >=1.0.10
+    - bxdecay0 >=1.1.2
     - clhep
     - xerces-c
     - hdf5
