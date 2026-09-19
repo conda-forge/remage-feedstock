@@ -55,7 +55,7 @@ requirements:
     - legend-pygeom-tools >=0.0.26
     - matplotlib-base
     - numpy
-    - reboost >=0.11.0
+    - reboost >=1
   run:
     - __unix
     - python
