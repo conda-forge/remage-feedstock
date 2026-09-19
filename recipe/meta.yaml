@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: remage
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/legend-exp/remage/archive/v{{ version }}.tar.gz
-  sha256: 8bdbb62fbb1bf37e1c87d8417b3e234fcf7ff21eaa8618daeefa77f399a070a6
+  sha256: 25cebd54e7eac360f21bc2e7305687a526a7a58a42e823a8d002c5b0d8b28bdf
 
 build:
   skip: true  # [win or py<311 or clhep != "2.4.7.1"]
@@ -55,7 +55,7 @@ requirements:
     - legend-pygeom-tools >=0.0.26
     - matplotlib-base
     - numpy
-    - reboost >=0.11.0
+    - reboost >=1
   run:
     - __unix
     - python
