@@ -25,6 +25,7 @@ requirements:
     - bxdecay0 >=1.1.2
     - clhep
     - xerces-c
+    - hdf5
     - hdf5 * nompi_*
     - qt-main
     - fmt
