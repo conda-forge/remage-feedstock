@@ -27,6 +27,7 @@ requirements:
     - xerces-c
     - hdf5
     - qt-main
+    - qt6-main
     - fmt
     - cli11
     - magic_enum
