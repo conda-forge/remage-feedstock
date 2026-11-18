@@ -21,13 +21,14 @@ requirements:
     - cmake
     - make
   host:
-    - geant4 >=11.3,<11.4
-    - bxdecay0 >=1.1.2
+    # >=11.3,<11.4 >=1.1.2
+    - geant4 
+    - bxdecay0
     - clhep
     - xerces-c
     - hdf5
-    - qt-main
-    - qt6-main
+    #- qt-main
+    #- qt6-main
     - fmt
     - cli11
     - magic_enum
