@@ -1,5 +1,7 @@
 MACOSX_SDK_VERSION:
 - '15.5'
+bxdecay0:
+- 1.2.1
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
@@ -13,7 +15,7 @@ clhep:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '21'
+- '22'
 fmt:
 - '12.1'
 hdf5:
@@ -28,6 +30,8 @@ pin_run_as_build:
     max_pin: x.x
 python:
 - 3.13.* *_cp313
+qt6_main:
+- '6.11'
 qt_main:
 - '5.15'
 target_platform:
