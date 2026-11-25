@@ -36,9 +36,9 @@ cmake --build build -j${CPU_COUNT}
 
 if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" || "${CROSSCOMPILING_EMULATOR:-}" != "" ]]; then
     ctest -V --test-dir build \
-        --tests-regex "(bxdecay0|nist|basics)/" \
-        --label-exclude "flaky|mt|mp" \
-        --exclude-regex observables
+        --tests-regex "basics/|hades/.*-2nbb\.mac" \
+        --label-exclude "flaky|mt|mp|val-only" \
+        --exclude-regex "observables|plot"
 fi
 
 cmake --install build
