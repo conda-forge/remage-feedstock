@@ -10,7 +10,7 @@ source:
 
 build:
   skip: true  # [win or py<311 or clhep != "2.4.7.1"]
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -21,12 +21,13 @@ requirements:
     - cmake
     - make
   host:
-    - geant4 >=11.3,<11.4
+    - geant4
+    - geant4 11.3.* *qt_*
     - bxdecay0
     - clhep
     - xerces-c
     - hdf5
-    - qt-main
+    - qt6-main
     - fmt
     - cli11
     - magic_enum

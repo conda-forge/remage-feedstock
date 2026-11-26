@@ -1,9 +1,11 @@
-DOCKER_PLATFORM:
-- linux/aarch64
+MACOSX_SDK_VERSION:
+- '15.5'
+bxdecay0:
+- 1.2.1
 c_stdlib:
-- sysroot
+- macosx_deployment_target
 c_stdlib_version:
-- '2.17'
+- '11.0'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -11,15 +13,17 @@ channel_targets:
 clhep:
 - 2.4.7.1
 cxx_compiler:
-- gxx
+- clangxx
 cxx_compiler_version:
-- '15'
-docker_image:
-- quay.io/condaforge/linux-anvil-aarch64:alma10
+- '22'
 fmt:
 - '12.1'
+geant4:
+- 11.3.2
 hdf5:
 - 1.14.6
+macos_machine:
+- x86_64-apple-darwin13.4.0
 numpy:
 - '2'
 pin_run_as_build:
@@ -27,10 +31,13 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.12.* *_cpython
-qt_main:
-- '5.15'
+- 3.13.* *_cp313
+qt6_main:
+- '6.11'
 target_platform:
-- linux-aarch64
+- osx-64
 xerces_c:
 - '3.3'
+zip_keys:
+- - clhep
+  - geant4
